@@ -18,7 +18,11 @@ def construir_pagina(contenido, active_tab, rol):
     html += "<a href='/citas' class='" + ("active" if active_tab == "citas" else "") + "'>📅 TF-02: Agendamiento Citas</a>"
     html += "<a href='/reportes' class='" + ("active" if active_tab == "reportes" else "") + "'>📊 TF-04: Reportes Admin</a>"
     html += "</div>"
-    
+    html += "<div style='margin-top: 30px; padding: 12px; background: #334155; border-radius: 6px; font-size: 11px; color: #cbd5e1; border-left: 4px solid #f59e0b; text-align: left;'>"
+    html += "<p style='font-weight: bold; color: #f8fafc; margin-bottom: 5px; font-size: 12px;'>🔄 RETROALIMENTACIÓN QA:</p>"
+    html += "<p style='margin-bottom: 4px;'>• <b>Ciclo 1:</b> Formulario cambiado asíncronamente (type=button) para congelar UI.</p>"
+    html += "<p>• <b>Ciclo 2:</b> Remoción de carácter 'T' en formato de fecha en módulo de citas.</p>"
+    html += "</div>"
     html += "<div class='main-content'><div class='header-panel'><h2>Panel de Pruebas de Software - QA Funcional</h2>"
     html += "<span class='user-badge'>" + rol + "</span></div>"
     html += contenido + "</div></body></html>"
