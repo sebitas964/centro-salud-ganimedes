@@ -1,1 +1,2 @@
-# centro-salud-ganimedes
+# centro-salud-ganimedes 
+Curso: Lenguajes de Programación - UPN
